@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<data>
+    <import type="com.example.sboishtyan.forsportsru.data.xml.Channel.Item"/>
+    <variable name="rssItem" type="Item"/>
+</data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/standart_padding">
+        <TextView
+            android:alpha="1"
+            android:textColor="@android:color/background_dark"
+            android:id="@+id/title"
+            android:textSize="@dimen/standart_text_size"
+            android:text="@{rssItem.title}"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/standart_margin"/>
+        <TextView
+            android:alpha="1"
+            android:textColor="@android:color/background_dark"
+            android:id="@+id/time"
+            android:layout_weight="0.2"
+            android:textSize="@dimen/date_text"
+            android:text="@{rssItem.pubDate}"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</layout>

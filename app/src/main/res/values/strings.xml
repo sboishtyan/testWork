@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">ForSportsRu</string>
+    <string name="error_save_background_image">При загрузке фона произошла ошибка</string>
+    <string-array name="team_ids">
+        <item>1044513</item>
+        <item>1044511</item>
+        <item>1044514</item>
+        <item>1044824</item>
+        <item>1044512</item>
+    </string-array>
+    <string-array name="team_titles">
+        <item>Локомотив</item>
+        <item>Спартак</item>
+        <item>Зенит</item>
+        <item>Ростов</item>
+        <item>ЦСКА</item>
+    </string-array>
 </resources>
